@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Crappo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="btc.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="stage.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="flex">
+    <div class="container">
+        <div class="logo">
+            <img src="logo.svg" alt="The Crappo Logo">
+        </div>
+    <div class="stages flex">
+        <div class="stage flex">
+      <input type="checkbox" name="stages" id="stage1" class="progress" disabled>
+      </div>
+      <div class="stage flex">
+      <input type="checkbox" name="stages" id="stage2" class="progress hidden" disabled>
+      </div>
+      <div class="stage flex">
+      <input type="checkbox" name="stages" id="stage3" class="progress hidden" disabled>
+      </div>
+      <div class="stage flex">
+      <input type="checkbox" name="stages" id="stage4" class="progress hidden" disabled>
+      </div>
+      <div class="stage flex">
+        <input type="checkbox" name="stages" id="stage4" class="progress hidden" disabled>
+        </div>
+    </div>
+    <div class="formslide" style="display: none">
+        <p class="head">Sign Up</p>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <input type="text" name="fname" id="fname" placeholder="First Name" autocomplete="off">
+                <input type="text" name="lname" id="lname" placeholder="Last Name"autocomplete="off">
+                <input type="date" name="dob" id="dob" placeholder="Date of Birth" autocomplete="off">
+                <input type="email" name="email" id="email" placeholder="Enter E-mail Address" autocomplete="off">
+            </fieldset>
+        </form>
+        <div class="button-container flex">
+        <button class="signin" id="signin nxt" onclick="skips(1)">Next</button>
+        </div>
+    </div>
+    <div class="formslide" style="display: none;">
+        <p class="head" id="person">Hi there, </p>
+        <p class="center">Let's get your account set up</p>
+        <form>
+            <fieldset>
+                <legend>Profile Setup</legend>
+                <input type="text" name="username" id="uname" placeholder="Username" autocomplete="off">
+                <input type="password" name="password" id="pwd" placeholder="Password" autocomplete="off">
+                <input type="password" name="pwd-conf" id="pwd-conf" placeholder="Confirm Password" autocomplete="off">
+            </fieldset>
+        </form>
+                     <div class="button-container flex">
+                    <button class="signin prev" onclick="skips(-1)"> Previous </button>
+                    <button class="signin nxt" id="especial">Next</button>
+                    </div>
+   </div>
+    <div class="formslide" style="display: none">
+        <p class="head">Coins Traded</p>
+        <p class="center">This helps us to set up an appropriate wallet to meet all of your crypto needs.</p>
+        <form>
+            <input type="checkbox" name="coins" id="bit" class="coin-check" value="Bitcoin">
+            <label for="bit">Bitcoin</label><br>
+            <input type="checkbox" name="coins" id="eth" class="coin-check" value="Ethereum">
+            <label for="bit">Ethereum</label><br>
+            <input type="checkbox" name="coins" id="ltc" class="coin-check" value="Litecoin">
+            <label for="bit">Litecoin</label><br>
+            <input type="checkbox" name="coins" id="bsc" class="coin-check" value="Binance">
+            <label for="bit">Binance</label><br>
+            <input type="checkbox" name="coins" id="oth" class="coin-check" value="Others">
+            <label for="bit">Others</label><br>
+            <textarea maxlength="50"  class="txt" placeholder="Enter other coins here" class="coin-check"></textarea>
+        </form>
+        <div class="button-container flex">
+            <button class="signin prev" onclick="skips(-1)"> Previous </button>
+            <button class="signin nxt" onclick="skips(1)" id="cheki">Next</button>
+            </div>
+    </div>
+    <div class="formslide" style="display: none;">
+        <p class="head">Set your Risk Level</p>
+        <p class="center">This helps us to suggest the best funds and coins for you to invest in</p>
+        <div class="flex risks">
+        <div class="risk" value="Low"> <p class="top"> <span class="icon"><img src="snowflake-regular.svg" alt="Cold"></span>Low</p> 
+            <div class="desc" >You're more of a soft boy, actually. You take little risks and when you do, you ensure first that you're absolutely certain that they'll pay off</div></div>
+        <div class="risk" value="Medium" > <p class="top"><span class="icon"><img src="fire-flame-simple-solid.svg" alt="Warm"></span>Medium</p>
+            <div class="desc">Medium-risk investors are those who are, as we'll say, in the blissful in-between. They're not exactly keen on throwing money away but recognise the importance of risk in investments like these.</div></div>
+        <div class="risk" value="High"> <p class="top"><span class=icon><img src="fieryred.svg" alt="Hot"></span>High</p>
+            <div class="desc">High risk investors are the biggest guys around. They understand that there's a ton of money to be made from investments. If anything, the thrill of high-risk, high-reward investments is really what keeps them going. </div>
+        </div>
+        </div>
+        <div class="button-container flex">
+            <button class="signin prev" onclick="skips(-1)"> Previous </button>
+       <button class="signin nxt" onclick="skips(1)" id="finish">Finish</button>
+       </div>
+    </div>
+    <div class="formslide" style="display: none;">
+        <p class="head">Congrats!!!!</p>
+        <p class="center">Review yor profile here</p>
+        <div class="show-details">
+        </div>
+    </div>
+    <div class="formslide" style="display: none">
+    <p class="head">All Done</p>
+    <p class="center">Click here to go back to <a href="index.html" target="_blank" rel="noopener noreferrer">Sign in &#8594;</a></p>
+    </div>
+</div>
+</body>
+</html>
