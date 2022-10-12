@@ -148,4 +148,7 @@ textarea{
     .risk{
         margin: 1rem 0;
     }
+    .container{
+        width: 80%;
+    }
 }
