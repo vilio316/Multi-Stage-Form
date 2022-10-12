@@ -94,3 +94,19 @@ a{
 input:focus{
     border: 0.3rem solid #3B82F6;
 }
+@media screen and (max-width: 768px){
+    #hold{
+        flex-direction: column;
+        height: auto;
+    }
+    .image-switcher{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .form-holder{
+        width: 100%;
+    }
+    html{
+        font-size: 10px;
+    }
+}
