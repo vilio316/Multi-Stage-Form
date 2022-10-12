@@ -138,13 +138,6 @@ textarea{
 .incomplete{
     background-color: red; opacity: 0.5;
 }
-.incomplete::after{
-    content: "Password must be at least 8 characters";
-    color: red;
-    background-color: white;
-    display: block;
-    height: 200px;
-}
 @media screen and (max-width: 768px){
     html{
         font-size: 10px;
